@@ -28,6 +28,6 @@ public class ActualGyroscopeScript : MonoBehaviour {
 
 	private static Quaternion GyroToUnity(Quaternion q)
     {
-        return new Quaternion(q.x, -q.z, q.y, q.w);
+        return new Quaternion(-q.x, q.z, -q.y, q.w);
     }
 }
