@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3c68f1a6a7d63cc44a2150372878def0
+timeCreated: 1507689409
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gycentium Popwell
+  fontNames:
+  - Gycentium Popwell
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
