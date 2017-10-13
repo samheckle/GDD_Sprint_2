@@ -245,3 +245,9 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ============ #
+# Builds #
+# ============ #
+Prototype1_Build/
+.vscode/

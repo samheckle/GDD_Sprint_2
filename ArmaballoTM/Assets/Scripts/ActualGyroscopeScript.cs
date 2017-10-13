@@ -19,6 +19,7 @@ public class ActualGyroscopeScript : MonoBehaviour {
 	void Start () {
 		Input.gyro.enabled = false;
 		transform.rotation = new Quaternion(0,0,0,0);
+		 Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 	
 	// Update is called once per frame
