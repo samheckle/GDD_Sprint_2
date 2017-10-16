@@ -5,18 +5,20 @@ using UnityEngine;
 
 /// <summary>
 /// Controls the behavior of the ball object
-/// Authors: Nik Whiteside
+/// Authors: Nik Whiteside, William Geddes
 /// Date: 10/10/2017
 /// </summary>
 public class BallManager : MonoBehaviour {
 
 	public Vector3 origin;
 	public int collectibleCount;
+    public GameObject spawnPoint;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-	}
+        spawnPoint = GameObject.FindWithTag("Respawn");
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,13 +27,13 @@ public class BallManager : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Returns the ball to the origin if it is
+	/// Returns the ball to the spawn point if it is
 	/// out of bounds
 	/// </summary>
 	void OutOfBounds(){
 		if (gameObject.transform.position.y < -10) {
 			Handheld.Vibrate();
-			gameObject.transform.position = origin;
+			gameObject.transform.position = spawnPoint.transform.position;
 		}
 	}
 
