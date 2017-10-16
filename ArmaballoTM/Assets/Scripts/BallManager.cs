@@ -13,6 +13,7 @@ public class BallManager : MonoBehaviour {
 	public Vector3 origin;
 	public int collectibleCount;
     public GameObject spawnPoint;
+	public GameObject goal;
 
     // Use this for initialization
     void Start () {
@@ -24,6 +25,9 @@ public class BallManager : MonoBehaviour {
 	void Update () {
 		OutOfBounds ();
 		Screen.orientation = ScreenOrientation.Portrait;
+		if (collectibleCount >= 4) {
+			goal.GetComponent<Goal> ().isLocked = false;
+		}
 	}
 
 	/// <summary>
