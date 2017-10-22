@@ -48,9 +48,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActualGyroscopeScript.cs" />
      <Compile Include="Assets\Scripts\BallManager.cs" />
+     <Compile Include="Assets\Scripts\DoorSwitch.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
      <Compile Include="Assets\Scripts\PressurePad.cs" />
+     <Compile Include="Assets\Scripts\TeleportPad.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
