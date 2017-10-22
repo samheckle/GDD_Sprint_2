@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 129fea42fb18cf04da101aa6d1a99e4f
+timeCreated: 1508506211
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Messages
+  fontNames:
+  - Messages
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

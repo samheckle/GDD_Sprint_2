@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActualGyroscopeScript.cs" />
+     <Compile Include="Assets\Scripts\AdvanceToScene.cs" />
      <Compile Include="Assets\Scripts\BallManager.cs" />
+     <Compile Include="Assets\Scripts\FadeInOut.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
  <Reference Include="Facebook.Unity.Settings">
