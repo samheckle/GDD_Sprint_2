@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Handles all level-ending behavior when the player
@@ -24,8 +25,7 @@ public class Goal : MonoBehaviour {
 
 	void Update(){
 		if (winScreen.enabled) {
-			Debug.Log ("RESTART");
-			RestartDemo ();
+			BackToMenu ();
 		}
 		if (!isLocked) {
 			gameObject.GetComponent<Renderer> ().material.color = unlockedMat.color;
@@ -33,17 +33,21 @@ public class Goal : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		Debug.Log ("COLLIDE");
 		if (col.gameObject.tag == "Player" && !isLocked) {
 			gyroScript.GyroEnabled = false;
 			winScreen.enabled = true;
+			//Update the progress in PlayerPrefs
+			int temp = PlayerPrefs.GetInt("Progress");
+			if (SceneManager.GetActiveScene ().name == "Level" + (temp-1)) {
+				PlayerPrefs.SetInt("Progress",PlayerPrefs.GetInt("Progress")+1);
+			}
 		}
 	}
 
 	//Reloads the scene
-	void RestartDemo(){
+	void BackToMenu(){
 		if (Input.touchCount >= 1) {
-			Application.LoadLevel (Application.loadedLevel);
+			SceneManager.LoadScene ("LevelSelect");
 		}
 	}
 }
