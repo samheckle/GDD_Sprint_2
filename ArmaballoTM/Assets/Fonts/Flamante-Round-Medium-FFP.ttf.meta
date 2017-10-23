@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0a3b124cf1d368840ac39dca51ae4735
+timeCreated: 1508715110
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Flamante Round
+  fontNames:
+  - Flamante Round
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
