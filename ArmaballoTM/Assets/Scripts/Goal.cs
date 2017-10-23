@@ -38,7 +38,7 @@ public class Goal : MonoBehaviour {
 			winScreen.enabled = true;
 			//Update the progress in PlayerPrefs
 			int temp = PlayerPrefs.GetInt("Progress");
-			if (SceneManager.GetActiveScene ().name == "Level" + (temp-1)) {
+			if (SceneManager.GetActiveScene ().name == "Level" + (temp + 1)) {
 				PlayerPrefs.SetInt("Progress",PlayerPrefs.GetInt("Progress")+1);
 			}
 		}

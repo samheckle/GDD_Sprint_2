@@ -18,7 +18,8 @@ public class BallManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        spawnPoint = GameObject.FindWithTag("Respawn");
+		spawnPoint = GameObject.FindWithTag("Respawn");
+		gameObject.transform.position = spawnPoint.transform.position;
 }
 	
 	// Update is called once per frame
