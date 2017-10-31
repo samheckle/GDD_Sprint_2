@@ -39,6 +39,7 @@ public class Goal : MonoBehaviour {
 			//Update the progress in PlayerPrefs
 			int temp = PlayerPrefs.GetInt("Progress");
 			if (SceneManager.GetActiveScene ().name == "Level" + (temp + 1)) {
+				Debug.Log ("PROGRESS LEVEL: " + temp);
 				PlayerPrefs.SetInt("Progress",PlayerPrefs.GetInt("Progress")+1);
 			}
 		}
